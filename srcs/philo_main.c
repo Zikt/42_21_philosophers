@@ -6,7 +6,16 @@
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 12:14:43 by pgurn             #+#    #+#             */
-/*   Updated: 2021/08/25 12:14:44 by pgurn            ###   ########.fr       */
+/*   Updated: 2021/08/25 13:43:05 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+# include <unistd.h>
+# include <stdio.h>
+
+int	main(int ac, char const *av[])
+{
+	if (ac == 2)
+		printf("|= %d -> %s =|\n", ac, av[1]);
+	return (0);
+}
