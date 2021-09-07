@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo_main.c                                       :+:      :+:    :+:   */
+/*   messages.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 12:14:43 by pgurn             #+#    #+#             */
-/*   Updated: 2021/09/02 13:14:53 by pgurn            ###   ########.fr       */
+/*   Created: 2021/09/05 19:52:07 by pgurn             #+#    #+#             */
+/*   Updated: 2021/09/05 19:53:35 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-//
-
-int	main(int ac, char const *av[])
+static char		*get_message(int type)
 {
-	t_philos_state	state;
-	
-	if (ac < 5 || ac > 6)
-	{
-		write(2, "wrong number of arguments\n", 26);
-		return (1);
-	}
-	//check args via parser
-	if (ft_parser(ac, av, &state))
-	{
-		write (2, "argument error\n", 15);
-		return (1);
-	}
-	//initiate simulation
-	ft_start_simulation(state);
-	return (0);
+	if (type == EAT)
+		return (" is eating\n");
+	else if (type == SLEEP)
+		return (" is sleeping\n");
+	else if (type == FORK)
+		return (" has taken a fork\n");
+	else if (type == THINK)
+		return (" is thinking\n");
+	else if (type == OVER)
+		return ("must eat count reached\n");
+	return (" died\n");
 }
+
+//display message

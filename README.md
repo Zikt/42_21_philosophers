@@ -15,6 +15,8 @@ Parallelism - [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computi
 
 [My Notes Here](https://docs.google.com/document/d/1pyTlBm1Rs05i-uNfpEXgWNTyEVzkH3te2RIk4AI1TqY/edit?usp=sharing)
 
+[Test - socrates](https://github.com/nesvoboda/socrates)
+
 ### Useful Links and Notes
 1. Most practical and hilarious explanation :) [Learn OS Concepts easy: Dining philosophers problem](https://www.youtube.com/watch?v=trdXKhWAGdg)
 2. Straight, clearer, more technical, maybe a bit more boring explanation ;) explanation [The Dining Philosophers Problem](https://www.youtube.com/watch?v=FYUi-u7UWgw)

@@ -6,7 +6,7 @@
 #    By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/28 20:26:54 by pgurn             #+#    #+#              #
-#    Updated: 2021/08/25 13:34:27 by pgurn            ###   ########.fr        #
+#    Updated: 2021/09/05 20:04:10 by pgurn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,11 @@ NAME	= philo
 SRCDIR	= srcs/
 
 FILES	=	philo_main.c \
+			ft_parser.c \
+			ft_utils.c \
+			initialize.c \
+			messages.c \
+			simulation.c \=
 
 SRCS	= $(addprefix $(SRCDIR), $(FILES))
 
