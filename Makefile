@@ -6,46 +6,45 @@
 #    By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/28 20:26:54 by pgurn             #+#    #+#              #
-#    Updated: 2021/09/05 20:04:10 by pgurn            ###   ########.fr        #
+#    Updated: 2021/09/27 23:05:56 by pgurn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= philo
+NAME			= philo
 
-SRCDIR	= srcs/
+FILES			=	philo_main.c \
+					ft_utils.c \
+			
+SDIR			= srcs/
 
-FILES	=	philo_main.c \
-			ft_parser.c \
-			ft_utils.c \
-			initialize.c \
-			messages.c \
-			simulation.c \=
+SRCS			= $(patsubst %.c, ${SDIR}/%.c, $(FILES))
 
-SRCS	= $(addprefix $(SRCDIR), $(FILES))
+OBJS			= $(SRCS:.c=.o)
 
-OBJS	= ${SRCS:.c=.o}
+CC				= gcc
 
-CC		= gcc -g
+RM				= rm -f
 
-RM		= rm -f
+HEADER			= -I srcs/
 
-CFLAGS	= -Wall -Wextra -Werror -I -D
+HEADER_FILE		= srcs/philosophers.h
 
-${NAME}:	${OBJS}
-			${CC} ${CFLAGS} $(OBJS) -o $(NAME)
+CFLAGS			= -Wall -Wextra -Werror
 
-all:		${NAME}
-			@echo "\\n\033[32;1m 	PHILOSOPHERS COMPLETE \033[0m \\n"
+all:			$(NAME)
 
-colour:
-				@echo "\x1b[36m""\x1b[1A\x1b[M"
+.c.o:
+				$(CC) ${HEADER} $(CFLAGS) -c $< -o $(<:.c=.o)
 
-clean:		colour
-			${RM} ${OBJS}
+$(NAME): $(OBJS) ${HEADER_FILE}
+				$(CC) ${HEADER} $(CFLAGS) $(OBJS) -o $(NAME)
 
-fclean:		clean
-			${RM} ${NAME}
+clean:
+				${RM} ${OBJS}
 
-re:			fclean all
+fclean:			clean
+				$(RM) $(NAME)
 
-PHONY:		all clean fclean re
+re:				fclean all
+
+.PHONY:			all clean fclean re
