@@ -19,12 +19,13 @@ Parallelism - [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computi
 
 ### Useful Links and Notes
 1. Most practical and hilarious explanation :) [Learn OS Concepts easy: Dining philosophers problem](https://www.youtube.com/watch?v=trdXKhWAGdg)
-2. Straight, clearer, more technical, maybe a bit more boring explanation ;) explanation [The Dining Philosophers Problem](https://www.youtube.com/watch?v=FYUi-u7UWgw)
-3. [Multithreading Code - Computerphile](https://www.youtube.com/watch?v=7ENFeb-J75k)
-4. [POSIX Threads Programming](https://hpc-tutorials.llnl.gov/posix/)
-5. [Introduction to Parallel Computing Tutorial](https://hpc.llnl.gov/training/tutorials/introduction-parallel-computing-tutorial#Abstract)
-6. (https://www.youtube.com/watch?v=ukM_zzrIeXs)
-7. [Programming with Threads - Jacob Sorber](https://youtube.com/playlist?list=PL9IEJIKnBJjFZxuqyJ9JqVYmuFZHr7CFM)
-8. [Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)
+2. [Dining Philosophers Problem with Solution with explainantion](https://www.youtube.com/watch?v=NbwbQQB7xNQ)
+3. Straight, clearer, more technical, maybe a bit more boring explanation ;) explanation [The Dining Philosophers Problem](https://www.youtube.com/watch?v=FYUi-u7UWgw)
+4. [Multithreading Code - Computerphile](https://www.youtube.com/watch?v=7ENFeb-J75k)
+5. [POSIX Threads Programming](https://hpc-tutorials.llnl.gov/posix/)
+6. [Introduction to Parallel Computing Tutorial](https://hpc.llnl.gov/training/tutorials/introduction-parallel-computing-tutorial#Abstract)
+7. (https://www.youtube.com/watch?v=ukM_zzrIeXs)
+8. [Programming with Threads - Jacob Sorber](https://youtube.com/playlist?list=PL9IEJIKnBJjFZxuqyJ9JqVYmuFZHr7CFM)
+9. [Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)
 ### Others
 Multithreading vs Multiprocessing
